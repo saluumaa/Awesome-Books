@@ -5,7 +5,7 @@ const List = document.querySelector('.list');
 const Add = document.querySelector('.add');
 const Contact = document.querySelector('.contact');
 
-export default function navigation() {
+const navigation = () => {
   navList.forEach((element) => {
     element.addEventListener('click', () => {
       List.classList.remove('hidden');
@@ -29,6 +29,7 @@ export default function navigation() {
       Contact.classList.add('active');
     });
   });
-}
+};
 
 navigation();
+export default navigation;

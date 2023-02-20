@@ -7,5 +7,3 @@ SavelocalItems();
 ListBooks();
 navigation();
 window.addEventListener('load', getDateTime);
-
-/* eslint-disable  max-classes-per-file */
