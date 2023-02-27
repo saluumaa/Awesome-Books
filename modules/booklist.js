@@ -14,14 +14,14 @@ export default class ListBooks {
 
   static addBook(book) {
     const div = document.createElement('div');
-    div.className = 'trHolder'
+    div.className = 'trHolder';
     const bookHolder = document.createElement('tr');
     bookHolder.innerHTML = `
         <td>''${book.title}'' by ${book.author}</td>
         <td><button class="remove" data-id="${book.id}">Remove</button></td>
         <hr>
       `;
-    div.appendChild(bookHolder)
+    div.appendChild(bookHolder);
     bookList.appendChild(div);
   }
 
